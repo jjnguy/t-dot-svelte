@@ -1,19 +1,22 @@
 {
   "name": "t-dot-svelte",
-  "version": "1.0.3",
-  "description": "Stupid Simple Client-Side Translation Library",
-  "main": "src/index.js",
+  "version": "1.0.1",
+  "description": "Stupid Simple Client-Side Translation Library for Svelte",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "svelte": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
   },
   "repository": "https://github.com/jjnguy/t-dot-svelte",
   "author": "jjnguy",
   "license": "MIT",
   "devDependencies": {
-    "rollup": "^1.28.0",
+    "rollup": "^1.32.1",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-svelte": "^5.1.1",
-    "svelte": "^3.16.7"
+    "rollup-plugin-svelte": "^5.2.3",
+    "svelte": "^3.31.0"
   },
   "dependencies": {
     "t-dot-js": "^1.0.3"

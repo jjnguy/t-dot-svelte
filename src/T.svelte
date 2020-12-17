@@ -1,5 +1,5 @@
 <script>
-  import { lookup } from "../translate.js";
+  import { lookup } from "t-dot-js";
   export let key;
   export let def = key;
   export let data = null;
